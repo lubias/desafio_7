@@ -1,6 +1,5 @@
 import request from 'supertest';
-import app from '../index'; // Importe corretamente o arquivo index
-
+import app from '../index';
 describe('Testes das rotas', () => {
   it('Deve retornar todos os alunos', async () => {
     const response = await request(app).get('/aluno');
