@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "es6", // Versão do ECMAScript alvo
+      "module": "commonjs", // Sistema de módulos (pode ser commonjs, esnext, etc.)
+      "strict": true, // Habilita todas as opções de verificação estrita
+      "esModuleInterop": true, // Permite interoperabilidade entre módulos ES6 e CommonJS
+      "skipLibCheck": true, // Pula a verificação de bibliotecas de definição de tipos
+      "forceConsistentCasingInFileNames": true, // Garante que os nomes de arquivos tenham a mesma letra maiúscula/minúscula
+      "resolveJsonModule": true, // Habilita a importação de arquivos .json
+      "baseUrl": "./", // Caminho base para a resolução de módulos
+      "paths": {
+        "@/*": ["src/*"] // Exemplo de alias para caminhos de módulos
+      }
+    },
+    "include": ["src/**/*.ts"], // Pastas e arquivos a serem incluídos na compilação
+    "exclude": ["node_modules"] // Pastas e arquivos a serem excluídos da compilação
+  }
+  

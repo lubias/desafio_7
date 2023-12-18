@@ -6,6 +6,9 @@ app.use(express.json());
 
 app.use('/aluno', alunoRoute);
 
-app.listen(4000, () => {
-  console.log('server running!');
+const server = app.listen(4000, () => {
+  console.log('Server running!');
 });
+
+
+export default server;
